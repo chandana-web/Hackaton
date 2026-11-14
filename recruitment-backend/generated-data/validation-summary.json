@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "checkedAt": "2027-01-31T00:00:00.000Z",
+  "counts": {
+    "departments": 10,
+    "skills": 30,
+    "requisitions": 100,
+    "screeningRules": 100,
+    "candidates": 2000,
+    "candidateSkills": 10391,
+    "resumeArtifacts": 2000,
+    "applications": 3000,
+    "interviewers": 20,
+    "interviews": 600,
+    "feedback": 599,
+    "offers": 150,
+    "groundTruth": 5
+  },
+  "checks": {
+    "primaryKeysAndForeignKeys": {
+      "passed": true
+    },
+    "screeningScoreReconciliation": {
+      "passed": true
+    },
+    "lifecycleAndDateOrdering": {
+      "passed": true
+    },
+    "labelledExceptions": [
+      {
+        "issueType": "duplicate_application",
+        "expected": 1,
+        "observed": 1,
+        "passed": true
+      },
+      {
+        "issueType": "interviewer_conflict",
+        "expected": 1,
+        "observed": 1,
+        "passed": true
+      },
+      {
+        "issueType": "stage_advanced_without_feedback",
+        "expected": 1,
+        "observed": 1,
+        "passed": true
+      },
+      {
+        "issueType": "offer_outside_approved_band",
+        "expected": 1,
+        "observed": 1,
+        "passed": true
+      },
+      {
+        "issueType": "closed_role_with_active_applications",
+        "expected": 1,
+        "observed": 1,
+        "passed": true
+      }
+    ]
+  },
+  "issues": []
+}

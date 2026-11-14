@@ -1,0 +1,6 @@
+"issue_type","target_id","expected_decision","field","expected_value","description"
+"duplicate_application","APP-REQ-2026-000005-CAND-001744-DUP","FLAG_DUPLICATE","candidateId,requisitionId","one application per candidate and requisition","Injected duplicate after generating the valid application baseline."
+"interviewer_conflict","INT-2026-000600","FLAG_SCHEDULING_CONFLICT","scheduledAt,panel","2026-12-01T09:00:00.000Z|IVR-000001","Injected overlapping booking for the same interviewer."
+"offer_outside_approved_band","OFF-2026-000150","FLAG_SALARY_OUT_OF_BAND","salary","1849502","Injected salary above the approved requisition maximum."
+"stage_advanced_without_feedback","APP-REQ-2026-000024-CAND-001671","FLAG_MISSING_FEEDBACK","feedback","INT-2026-000600","Application was advanced despite a missing panel feedback record."
+"closed_role_with_active_applications","REQ-2026-000006","FLAG_ACTIVE_APPLICATIONS","status","APP-REQ-2026-000006-CAND-000192","Injected closed requisition retaining a non-terminal application."

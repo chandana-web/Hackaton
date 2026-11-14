@@ -1,0 +1,42 @@
+[
+  {
+    "issue_type": "duplicate_application",
+    "target_id": "APP-REQ-2026-000005-CAND-001744-DUP",
+    "expected_decision": "FLAG_DUPLICATE",
+    "field": "candidateId,requisitionId",
+    "expected_value": "one application per candidate and requisition",
+    "description": "Injected duplicate after generating the valid application baseline."
+  },
+  {
+    "issue_type": "interviewer_conflict",
+    "target_id": "INT-2026-000600",
+    "expected_decision": "FLAG_SCHEDULING_CONFLICT",
+    "field": "scheduledAt,panel",
+    "expected_value": "2026-12-01T09:00:00.000Z|IVR-000001",
+    "description": "Injected overlapping booking for the same interviewer."
+  },
+  {
+    "issue_type": "offer_outside_approved_band",
+    "target_id": "OFF-2026-000150",
+    "expected_decision": "FLAG_SALARY_OUT_OF_BAND",
+    "field": "salary",
+    "expected_value": 1849502,
+    "description": "Injected salary above the approved requisition maximum."
+  },
+  {
+    "issue_type": "stage_advanced_without_feedback",
+    "target_id": "APP-REQ-2026-000024-CAND-001671",
+    "expected_decision": "FLAG_MISSING_FEEDBACK",
+    "field": "feedback",
+    "expected_value": "INT-2026-000600",
+    "description": "Application was advanced despite a missing panel feedback record."
+  },
+  {
+    "issue_type": "closed_role_with_active_applications",
+    "target_id": "REQ-2026-000006",
+    "expected_decision": "FLAG_ACTIVE_APPLICATIONS",
+    "field": "status",
+    "expected_value": "APP-REQ-2026-000006-CAND-000192",
+    "description": "Injected closed requisition retaining a non-terminal application."
+  }
+]

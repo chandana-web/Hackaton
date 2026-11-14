@@ -1,0 +1,49 @@
+{
+  "formatVersion": 1,
+  "seed": 20261022,
+  "scale": "full",
+  "dataAsOf": "2027-01-31T00:00:00.000Z",
+  "source": "Synthetic data generated locally; no external candidate data used.",
+  "generator": "node src/seed/seed.js",
+  "counts": {
+    "departments": 10,
+    "skills": 30,
+    "requisitions": 100,
+    "screeningRules": 100,
+    "candidates": 2000,
+    "candidateSkills": 10391,
+    "resumeArtifacts": 2000,
+    "applications": 3000,
+    "interviewers": 20,
+    "interviews": 600,
+    "feedback": 599,
+    "offers": 150,
+    "groundTruth": 5
+  },
+  "anomalies": [
+    "duplicate_application",
+    "interviewer_conflict",
+    "offer_outside_approved_band",
+    "stage_advanced_without_feedback",
+    "closed_role_with_active_applications"
+  ],
+  "sha256": {
+    "data.json": "6cac5aebd5869bd840bf9841867f8b3be331eed1485e86ace1103b2053a9d723",
+    "ground_truth.json": "8970ebacd68dc9afae9f457e9f4f219db41f813f3c6db0a61837972e4ebe05c5",
+    "ground_truth.csv": "6db86916b2ff4e72e182f1145ebbdc7ade3bacc1347310fe088b0186353da260",
+    "seed-data.sql": "f00171e89e29474fb2d349736d26fe557b0fa351cb60cc1af9def7be113704c7",
+    "validation-summary.json": "f9a78dfe6a56ae14b6d52cb7f6e56c33bc1b68d882147b772363e129e3203d21",
+    "departments.csv": "efc6eda54d50c8153fbb46e9793ff7d7f0969ffda11886a79c0c941f9624215e",
+    "skills.csv": "a1367bd147006c8853e9ecdec986dc3f933bd330f3754631a7b0dea3f1e0582f",
+    "requisitions.csv": "66bf41f9395af92d09754dbd7386bf572b7f991b01be6704313dd4af785d4769",
+    "screeningRules.csv": "9a71beacad8b874cca4f12df456b1f41a64d71baaddaafd5f042189cb88cc9ce",
+    "candidates.csv": "577c039264182a4677c4d080ceab355e135844d1a26ea0d99772aed4b91cd30a",
+    "candidateSkills.csv": "f2cd95c64a9d5a6d25eaea76eb3597042c518e3e0a08f1e062ae4624ec870102",
+    "resumeArtifacts.csv": "1003015a0d817258830ababb8600f74e6ce08bded000fa62037524f74e90db56",
+    "applications.csv": "8f3fd278111d71b2f51a1ae70069ef844bd23100b73e343b4031b9eb132b4118",
+    "interviewers.csv": "2a2daf86009bb54b758feb79453cb980c5cc608e32895a8371af3e4b0afb3727",
+    "interviews.csv": "bab90935d0b3063493f424401a92dfbccda6e6c8299c889fb963e322b41f7590",
+    "feedback.csv": "b4c30ebd38d39aae003ba7bd424dc3466606fb03c1340625ac0db433e1c13ad1",
+    "offers.csv": "10e017a404d78de7f3f4db790c6a75b77429e4d4558bad7b98f8b4940a376ba1"
+  }
+}

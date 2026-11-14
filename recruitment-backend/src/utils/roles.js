@@ -1,0 +1,9 @@
+module.exports = [
+  "BUSINESS_REQUESTER",
+  "PROCESS_OWNER",
+  "APPROVER",
+  "OPERATIONS_ANALYST",
+  "INTERVIEWER",
+  "CANDIDATE",
+  "SYSTEM_ADMIN",
+];
